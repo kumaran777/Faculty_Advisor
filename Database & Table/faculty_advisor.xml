@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.2
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Nov 22, 2020 at 04:40 AM
+- Server version: 10.4.14-MariaDB
+- PHP Version: 7.4.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="faculty_advisor" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="feedback">
+                CREATE TABLE `feedback` (
+                  `NAME` varchar(50) NOT NULL,
+                  `EMAIL` varchar(50) NOT NULL,
+                  `COMMENT` varchar(50) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="info">
+                CREATE TABLE `info` (
+                  `YEAR` int(20) NOT NULL,
+                  `REG_NO` bigint(10) NOT NULL,
+                  `NAME` varchar(50) NOT NULL,
+                  `FACULTY_NAME` varchar(50) NOT NULL,
+                  `FATHER_NAME` varchar(50) NOT NULL,
+                  `MOTHER_NAME` varchar(50) NOT NULL,
+                  `MOBILE_NO` bigint(10) NOT NULL,
+                  `FATHER_NO` bigint(10) NOT NULL,
+                  `EMAIL` varchar(50) NOT NULL,
+                  `ADDRESS` varchar(100) NOT NULL,
+                  `SEM_ATT` varchar(35) NOT NULL,
+                  `SEM_CGP` varchar(35) NOT NULL,
+                  `SEM_CIE_NO` varchar(35) NOT NULL,
+                  `SUB1_MARK` varchar(35) NOT NULL,
+                  `SUB2_MARK` varchar(35) NOT NULL,
+                  `SUB3_MARK` varchar(35) NOT NULL,
+                  `SUB4_MARK` varchar(35) NOT NULL,
+                  `SUB5_MARK` varchar(35) NOT NULL,
+                  `SUB6_MARK` varchar(35) NOT NULL,
+                  `CERTIFICATE_1` varchar(50) NOT NULL,
+                  `CERTIFICATE_2` varchar(50) NOT NULL,
+                  `CERTIFICATE_3` varchar(50) NOT NULL,
+                  `CERTIFICATE_4` varchar(50) NOT NULL,
+                  `CERTIFICATE_5` varchar(50) NOT NULL,
+                  `ACTIVITY_1` varchar(50) NOT NULL,
+                  `ACTIVITY_2` varchar(50) NOT NULL,
+                  `ACTIVITY_3` varchar(50) NOT NULL,
+                  `ACTIVITY_4` varchar(50) NOT NULL,
+                  `ACTIVITY_5` varchar(50) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+            <pma:table name="register">
+                CREATE TABLE `register` (
+                  `userid` varchar(50) NOT NULL,
+                  `email` varchar(50) NOT NULL,
+                  `password` varchar(50) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'faculty_advisor'
+    -->
+    <database name="faculty_advisor">
+        <!-- Table feedback -->
+        <table name="feedback">
+            <column name="NAME">Kumaran</column>
+            <column name="EMAIL">kumaranraja777@gmail.com</column>
+            <column name="COMMENT">Good...!</column>
+        </table>
+        <!-- Table info -->
+        <table name="info">
+            <column name="YEAR">1</column>
+            <column name="REG_NO">1518106001</column>
+            <column name="NAME">John</column>
+            <column name="FACULTY_NAME">Kumaran</column>
+            <column name="FATHER_NAME">Sam</column>
+            <column name="MOTHER_NAME">Tessa</column>
+            <column name="MOBILE_NO">1234567891</column>
+            <column name="FATHER_NO">1987654321</column>
+            <column name="EMAIL">john@gmail.com</column>
+            <column name="ADDRESS">London-007.</column>
+            <column name="SEM_ATT">Sem1-98%</column>
+            <column name="SEM_CGP">Sem 1-9.8</column>
+            <column name="SEM_CIE_NO">Sem 1 - CIE 1</column>
+            <column name="SUB1_MARK">DAA - 50</column>
+            <column name="SUB2_MARK">DBMS - 50</column>
+            <column name="SUB3_MARK">MP - 50</column>
+            <column name="SUB4_MARK">OOPS -50</column>
+            <column name="SUB5_MARK">WT - 50</column>
+            <column name="SUB6_MARK">ADS - 50</column>
+            <column name="CERTIFICATE_1">Red-Hat</column>
+            <column name="CERTIFICATE_2">NPTEL</column>
+            <column name="CERTIFICATE_3">-</column>
+            <column name="CERTIFICATE_4">-</column>
+            <column name="CERTIFICATE_5">-</column>
+            <column name="ACTIVITY_1">BlockChain</column>
+            <column name="ACTIVITY_2">Web-Development</column>
+            <column name="ACTIVITY_3">-</column>
+            <column name="ACTIVITY_4">-</column>
+            <column name="ACTIVITY_5">-</column>
+        </table>
+        <table name="info">
+            <column name="YEAR">1</column>
+            <column name="REG_NO">1518106002</column>
+            <column name="NAME">Steffan</column>
+            <column name="FACULTY_NAME">Kumaran</column>
+            <column name="FATHER_NAME">Ham</column>
+            <column name="MOTHER_NAME">Elsa</column>
+            <column name="MOBILE_NO">1234567891</column>
+            <column name="FATHER_NO">1234567898</column>
+            <column name="EMAIL">steffan@gmail.com</column>
+            <column name="ADDRESS">Europe-007.</column>
+            <column name="SEM_ATT">Sem1-89%</column>
+            <column name="SEM_CGP">Sem 1-8.6</column>
+            <column name="SEM_CIE_NO">Sem 1-CIE 1</column>
+            <column name="SUB1_MARK">OOPS-50</column>
+            <column name="SUB2_MARK">DAA-50</column>
+            <column name="SUB3_MARK">M-1-50</column>
+            <column name="SUB4_MARK">CN-50</column>
+            <column name="SUB5_MARK">DBMS-50</column>
+            <column name="SUB6_MARK">OS-50</column>
+            <column name="CERTIFICATE_1">CCNA</column>
+            <column name="CERTIFICATE_2">Red-Hat</column>
+            <column name="CERTIFICATE_3">Oracle</column>
+            <column name="CERTIFICATE_4">-</column>
+            <column name="CERTIFICATE_5">-</column>
+            <column name="ACTIVITY_1">VR</column>
+            <column name="ACTIVITY_2">ML</column>
+            <column name="ACTIVITY_3">-</column>
+            <column name="ACTIVITY_4">-</column>
+            <column name="ACTIVITY_5">-</column>
+        </table>
+        <!-- Table register -->
+        <table name="register">
+            <column name="userid">Kumaran</column>
+            <column name="email">kumaranraja777@gmail.com</column>
+            <column name="password">kumaran</column>
+        </table>
+    </database>
+</pma_xml_export>
